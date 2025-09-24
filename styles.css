@@ -513,9 +513,32 @@ body {
     padding: 2.5rem;
     border-radius: 8px;
     border-left: 4px solid #dc2626;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
-.founder-card h3 {
+.founder-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #f1f5f9;
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.founder-details {
+    flex: 1;
+}
+
+.founder-details h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -642,6 +665,15 @@ body {
 
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .founder-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-image {
+        align-self: center;
     }
 
     .footer-content {
